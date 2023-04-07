@@ -19,6 +19,11 @@ def contact():
     return render_template("contact.html")
 
 
+@app.route("/carrers")
+def carrers():
+    return render_template("carrers.html")
+
+
 if __name__ == "__main__": 
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
